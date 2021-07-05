@@ -11,4 +11,17 @@ class GeneralUtil
 
         return $yearStr;
     }
+
+    public static function sign(float $value): int
+    {
+        if ($value > 0) {
+            return 1;
+        }
+
+        if ($value < 0) {
+            return -1;
+        }
+
+        return 0;
+    }
 }
